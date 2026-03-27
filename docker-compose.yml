@@ -1,9 +1,0 @@
-services:
-  steamguard-bot:
-    build: .
-    container_name: steamguard-bot
-    restart: unless-stopped
-    env_file:
-      - .env
-    volumes:
-      - ./maFiles:/app/maFiles:ro
